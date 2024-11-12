@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Page</h1>
+        <h2>Maklum Balas Pengguna:</h2>
+        <p id="userResponse"></p>
+    </div>
+    <script>
+        const response = localStorage.getItem('userResponse');
+        document.getElementById("userResponse").textContent = response ? response : "Tiada maklum balas lagi.";
+    </script>
+</body>
+</html>
